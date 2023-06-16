@@ -18,8 +18,8 @@ import java.io.PrintWriter;
 public class Login extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	
-	private final String USUARIO = "usuario";
-	private final String PASSWORD = "password";
+	private final String USUARIO = "admin"; //Usuario
+	private final String PASSWORD = "1234"; //Contraseña
        
     
 
@@ -58,13 +58,13 @@ public class Login extends HttpServlet {
 		if(!USUARIO.contentEquals(requestUsuario) || !PASSWORD.contentEquals(requestPassword)) {
 			out.println("<script type=\"text/javascript\">");
 			out.println("alert('Usuario o password incorrectos');");
-			out.println("location='login';"); //el profe lo tenía como .jsp
+			out.println("location='login';"); //el profe lo tenía como .jsp a mi me funcionó bien tal como está
 			out.println("</script>");
 			
 		}else {
 			HttpSession sesionUsuario= request.getSession(true);
 			sesionUsuario.setAttribute("Nombre", requestUsuario);
-			RequestDispatcher rd = request.getRequestDispatcher("crearcapacitacion"); //el profe lo tenía cómo .jsp
+			RequestDispatcher rd = request.getRequestDispatcher("crearcapacitacion"); //el profe lo tenía como .jsp a mi me funcionó bien tal como está
 			rd.forward(request, response);
 		}
 		
