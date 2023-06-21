@@ -25,6 +25,12 @@
                     <li class="nav-item">
                         <a class="nav-link active" href="${pageContext.request.contextPath}/listarcapacitaciones">Listar capacitación</a>
                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link active" href="${pageContext.request.contextPath}/crearusuario">Crear Usuario</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link active" href="${pageContext.request.contextPath}/generarusuario">Listar Usuario</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link active" href="${pageContext.request.contextPath}/inicio">Cerrar Sesión</a>
                     </li>

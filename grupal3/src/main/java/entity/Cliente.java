@@ -1,4 +1,4 @@
-package model;
+package entity;
 
 /**Clase Cliente que hereda los atributos y métodos de la clase Usuario
  * @author Cintia Muñoz, Oscar Fernandez, Joaquin baeza, Hans Schiess
@@ -100,14 +100,16 @@ public class Cliente extends Usuario{
 		this.comuna = comuna;
 	}
 
+	
 	//Metodo toString
+	
 	@Override
 	public String toString() {
 		return "Cliente [razonSocial=" + razonSocial + ", giroEmpresa=" + giroEmpresa + ", rut=" + rut
 				+ ", telefonoRepresentante=" + telefonoRepresentante + ", direccion=" + direccion + ", comuna=" + comuna
 				+ "]";
 	}
-	
+
 	
 	
 	

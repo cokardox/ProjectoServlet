@@ -1,4 +1,4 @@
-package model;
+package entity;
 
 /**
  * Clase que representa a un Usuario.

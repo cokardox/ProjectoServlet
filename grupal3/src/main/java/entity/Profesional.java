@@ -1,4 +1,4 @@
-package model;
+package entity;
 
 /**Clase Profesional que hereda los atributos y métodos de la clase Usuario
  * @author Cintia Muñoz, Oscar Fernandez, Joaquin baeza, Hans Schiess

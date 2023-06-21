@@ -23,6 +23,12 @@
                     <li class="nav-item">
                         <a class="nav-link active" href="${pageContext.request.contextPath}/listarcapacitaciones">Listar capacitación</a>
                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link active" href="${pageContext.request.contextPath}/crearusuario">Crear Usuario</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link active" href="${pageContext.request.contextPath}/generarusuario">Listar Usuario</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link active" href="${pageContext.request.contextPath}/contacto">Contacto</a>
                     </li>
@@ -42,7 +48,7 @@
     <main class="container formulario mt-5 mb-5">
         <div
                             style="margin: 0 auto; padding-left: 20px; padding-right: 20px;">
-                            <form class="text" action="factura" method="POST">
+                            <form class="text" action="crearcapacitacion" method="POST">
                                 <div class="row">
                                     <div class="col-sm">
                                         <label for="exampleFormControlInput1">ID empresa</label>

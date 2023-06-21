@@ -1,4 +1,4 @@
-package model;
+package entity;
 
 /**
  * La clase Capacitacion representa una capacitación realizada a un cliente.

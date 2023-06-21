@@ -59,4 +59,24 @@
     <servlet-name>Login</servlet-name>
     <url-pattern>/Login</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>CrearUsuario</display-name>
+    <servlet-name>CrearUsuario</servlet-name>
+    <servlet-class>controller.CrearUsuario</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CrearUsuario</servlet-name>
+    <url-pattern>/CrearUsuario</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>GenerarUsuario</display-name>
+    <servlet-name>GenerarUsuario</servlet-name>
+    <servlet-class>controller.GenerarUsuario</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GenerarUsuario</servlet-name>
+    <url-pattern>/GenerarUsuario</url-pattern>
+  </servlet-mapping>
 </web-app>
