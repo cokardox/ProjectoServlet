@@ -8,6 +8,7 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -43,23 +44,37 @@ public class CrearUsuario extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
 		String nombre = request.getParameter("nombre");
-	    String apellido1 = request.getParameter("apellido1");
-	    String apellido2 = request.getParameter("apellido2");
-	    String fechaDeNacimiento= request.getParameter("fechaNacimiento");
-	    String run = request.getParameter("run");
-	    
-	    Usuario usuario = new Usuario(nombre, apellido1, apellido2, fechaDeNacimiento, run);
-	    
-		ArrayList<Usuario> listaUsuarios = new ArrayList<Usuario>();
-		listaUsuarios.add(usuario);
+		String apellido1 = request.getParameter("apellido1");
+		String apellido2 = request.getParameter("apellido2");
+		String fechaNac = request.getParameter("fechaNacimiento");
+		String run = request.getParameter("run");
+		String razonSocial = request.getParameter("razonSocial");
+		String giro = request.getParameter("giroEmpresa");
+		String rut = request.getParameter("rut");
+		String telefono = request.getParameter("telefonoRepresentante");
+		String direccion = request.getParameter("direccion");
+		String comuna = request.getParameter("comuna");
 		
-		request.setAttribute("usuarios", listaUsuarios);
+	   //Cliente c1 = new Cliente(nombre, apellido1, apellido2, fechaNac , run, razonSocial, giro, rut, telefono, direccion, comuna);
 	    
-		getServletContext().getRequestDispatcher("/generarusuario.jsp").forward(request,response);
-		doGet(request, response);
+		//ArrayList<Cliente> listaUsuarios = new ArrayList<Cliente>();
+		//listaUsuarios.add(c1);
+		
+		//request.setAttribute("usuarios", listaUsuarios);
+	   
+		PrintWriter Salida;
+		response.setContentType("text/html");
+		Salida = response.getWriter();
+		Salida.println("<html lang='es'><head><meta charset='UFT-8'><title>Lista Usuarios</titel><head><body>");
+		Salida.println("<h1> Usuario " + nombre + "</h1>");
+		Salida.println("</body></html>");
+		
+		Salida.close();
+		
 
-		
+	
 		
 
 	}

@@ -8,12 +8,6 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="${pageContext.request.contextPath}/inicio">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="${pageContext.request.contextPath}/login">Login</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link active" href="${pageContext.request.contextPath}/contacto">Contacto</a>
                     </li>
                     <li class="nav-item">
@@ -21,6 +15,12 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" href="${pageContext.request.contextPath}/listarcapacitaciones">Listar capacitación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="${pageContext.request.contextPath}/crearusuario">Crear Usuario</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="${pageContext.request.contextPath}/generarusuario">Listar Usuario</a>
                     </li>
                 </ul>
             </div>

@@ -2,45 +2,12 @@
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-<title>Contacto - Asesorias PR</title>
-
 <style><%@ include file="css/style.css" %> </style>
 <%@ include file="head.jsp" %>
-</head>
 <body>
-	<nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand me-5 ms-5" href="#">Asesorías PR</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse me-5" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="${pageContext.request.contextPath}/crearcapacitacion">Crear capacitación</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="${pageContext.request.contextPath}/listarcapacitaciones">Listar capacitación</a>
-                    </li>
-                     <li class="nav-item">
-                        <a class="nav-link active" href="${pageContext.request.contextPath}/crearusuario">Crear Usuario</a>
-                    </li>
-                     <li class="nav-item">
-                        <a class="nav-link active" href="${pageContext.request.contextPath}/generarusuario">Listar Usuario</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="${pageContext.request.contextPath}/inicio">Cerrar Sesión</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+	
+	<%@ include file="nav.jsp" %>
 	<header>
-	
-	
         <img src="./images/contacto2.jpeg" alt="oficina">
         <section class="container">
             <h1 class="text-center mt-5">FORMULARIO <br> DE CONTACTO</h1>
@@ -76,16 +43,7 @@
             </div>
         </form>
     </main>
-    <footer>
-        <h3 class="mt-3">Búscanos en redes sociales</h3>
-        <a href="http://www.facebook.com" target="_blank" class="rrss me-3"><i class="fa-brands fa-facebook fa-3x"
-                style="color: rgb(159, 201, 237)"></i></a>
-        <a href="http://www.instagram.com" target="_blank" class="rrss me-3"><i class="fa-brands fa-instagram fa-3x"
-                style="color: rgb(159, 201, 237)"></i></a>
-        <a href="http://www.twitter.com" target="_blank" class="rrss"><i class="fa-brands fa-twitter fa-3x"
-                style="color: rgb(159, 201, 237)"></i></a>
-        <p class="mt-1">©Copyright Tech Titans 2023</p>
-    </footer>
+    <%@ include file="footer.jsp" %>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>

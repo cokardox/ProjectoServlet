@@ -1,14 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Empresa de Asesoria</title>
+
 
 <style><%@ include file="css/style.css" %> </style>
 <%@ include file="head.jsp" %>
-</head>
+
 <body>
    <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
@@ -29,9 +26,6 @@
             </div>
         </div>
     </nav>
-    
-        
-
     <header>
         <img src="./images/nosotros.avif" alt="oficina">
         <section class="container">
@@ -56,22 +50,13 @@
                         los entornos laborales.</p>
                 </div>
                 <div class="col-6">
-                    <img class="img2" src="images/oficina1.jpeg" height="85%" alt="reunion oficina">
+                    <img class="img2" src="../images/oficina1.jpeg" height="85%" alt="reunion oficina">
                 </div>
             </div>
         </section>
     </main>
-
-    <footer>
-        <h2 class="mt-3">Búscanos en redes sociales</h2>
-        <a href="http://www.facebook.com" target="_blank" class="rrss me-3"><i class="fa-brands fa-facebook fa-3x"
-                style="color: rgb(159, 201, 237)"></i></a>
-        <a href="http://www.instagram.com" target="_blank" class="rrss me-3"><i class="fa-brands fa-instagram fa-3x"
-                style="color: rgb(159, 201, 237)"></i></a>
-        <a href="http://www.twitter.com" target="_blank" class="rrss"><i class="fa-brands fa-twitter fa-3x"
-                style="color: rgb(159, 201, 237)"></i></a>
-        <p class="mt-1">©Copyright Tech Titans 2023</p>
-    </footer>
+<%@ include file="footer.jsp" %>
+  
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"

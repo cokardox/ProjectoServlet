@@ -2,38 +2,12 @@
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-<title>Crear Usuario</title>
+
 <%@ include file="head.jsp" %>
 <style><%@ include file="css/style.css" %> </style>
-</head>
+
 <body>
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand pe-5 ps-5" href="#">Asesorías PR</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav pe-5">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="${pageContext.request.contextPath}/crearcapacitacion">Crear Capacitación</a>
-                    </li>
-                     <li class="nav-item">
-                        <a class="nav-link active" href="${pageContext.request.contextPath}/listarcapacitaciones">Listar Capacitación</a>
-                    </li>
-                     <li class="nav-item">
-                        <a class="nav-link active" href="${pageContext.request.contextPath}/generarusuario">Listar Usuario</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="${pageContext.request.contextPath}/inicio">Cerrar</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+<%@ include file="nav.jsp" %>
     <header>
         <img src="./images/usuario.jpeg" alt="oficina">
         <section class="container">
@@ -57,7 +31,7 @@
      </script>
     
     <main class="container">
-        <form action="generarusuario" method="POST">
+        <form action="crearusuario" method="post">
             <div class="row mt-5 mb-3">
                 <div class="form-group col-4 mb-3">
                     <label>Nombre:</label>
@@ -156,10 +130,11 @@
                 </div>
             </div>
 
-            <input type="submit" class="btn btn-primary col-3 mb-5" value="Crear">
+            <input type="submit">Crear</button>
 
         </form>
     </main>
+    <%@ include file="footer.jsp" %>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
